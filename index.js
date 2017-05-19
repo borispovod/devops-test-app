@@ -32,3 +32,14 @@ app.listen(port, ip, (err) => {
     console.log(`Launched on http://${ip}:${port}/`)
   }
 })
+
+setInterval(() => {
+  const memUsage = process.memoryUsage()
+
+  console.log(`Memory usage: ${memUsage.rss}/${memUsage.heapTotal}/${memUsage.heapUsed}`)
+}, 5000)
+
+setTimeout(() => {
+  console.log('Exception!!!')
+  process.exit(0)
+}, 3600000)

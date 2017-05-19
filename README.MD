@@ -29,8 +29,13 @@ Default parameters:
 
 Should show message: `Launched on http://127.0.0.1:3000/`
 
-## Requests:
+## Requests
 
 * **/** - Returns `Hello, world`
 * **/uuid** - Returns random UUID
 * **/image** - Returns image
+
+## Logs
+
+Log happens every 5 seconds
+
